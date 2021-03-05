@@ -659,7 +659,7 @@ function plugin_googlea(msg)
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
 plugin = dofile("File_Bot/"..v)
-if plugin.googlea and msg then
+if plugin.googlea and؛ msg then
 pre_msg = plugin.googlea(msg)
 end
 end
@@ -2192,7 +2192,6 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
-]]
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
