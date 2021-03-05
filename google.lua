@@ -2172,7 +2172,7 @@ Text = [[
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
-if text:match("^source$") or text:match("^اصدار$") or text:match("^الاصدار$") or  text:match("^السورس$") or text:match("^سورس$") and faeder11(msg) then 
+if text == ' سورس' or text == 'السورس ' or text == 'مطور السورس' then
 local inline = {
 {{text="- source ▽  ،",url="t.me/Soooooooooooooooood"}},
 {text="- 𝐠𝐨𝐨𝐠𝐥𝐞 ☽‘🎸،",url="t.me/KGTBR"}},
